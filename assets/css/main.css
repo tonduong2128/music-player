@@ -188,11 +188,16 @@
     height:40px;
     width: 40px;
     text-align:center;
-    line-height:40px
+    line-height:40px;
+    -webkit-appearance:none;
   }
   .progressVolume{
     height:4px;
     width:70px;
+  }
+  .progressVolume::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    appearance:none;
   }
   .dark-mode{
     position:absolute;
