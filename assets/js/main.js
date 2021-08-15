@@ -328,8 +328,8 @@ const app={
                 btnVoluneMute.classList.add('hiden');
             }
             audio.volume=progressVolume.value/100;
-            console.log('volume audio: ',audio.volume);
-            console.log('progress volume: ',progressVolume.value);
+            alert(audio.volume);
+            alert(progressVolume.value);
             app.setConfig('volumeAudio',audio.volume);
         }
 
