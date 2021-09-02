@@ -36,10 +36,10 @@ const app={
     isRepeat: false,
     volumeAudio: 1,
     setConfig: function(key,value){
-        localStorage.setItem(key,JSON.stringify(value));
+        window.localStorage.setItem(key,JSON.stringify(value));
     },
     getConfig: function(key){
-        return JSON.parse(localStorage.getItem(key));
+        return JSON.parse(window.localStorage.getItem(key));
     },
     songs:[
         {
