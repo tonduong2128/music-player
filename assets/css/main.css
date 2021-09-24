@@ -205,8 +205,30 @@
     right: 34px;
   }
   .dark-mode input{
-    height: 8px;
-    width: 30px;
+    height: 20px;
+    width: 40px;
+    appearance: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    background-color: #fff;
+  }
+  .dark-mode input:checked{
+    background-color:rgba(0, 0, 0, 0.2);    
+  }
+  .dark-mode input::before{
+    position:absolute;
+    content: "";
+    height: 24px;
+    width: 24px;  
+    background-color: blue;
+    border-radius: 50% ;
+    top: -3px;
+    left: -4px;
+    transition: left 250ms ease-in-out, background-color 250ms linear 250ms;
+  }
+  .dark-mode input:checked:before{
+    left: 22px;
   }
   .dark-mode__content{
     font-size:16px;
